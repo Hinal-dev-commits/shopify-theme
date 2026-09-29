@@ -1,0 +1,38 @@
+<!-- 1. The HTML & Liquid (The Structure) -->
+<div class="announcement-bar" style="background-color: {{ section.settings.bg_color }};">
+  <h2>{{ section.settings.headline_text }}</h2>
+</div>
+
+<!-- 2. The CSS & JS (Scoped to this section) -->
+<style>
+  .announcement-bar {
+    text-align: center;
+    padding: 10px;
+  }
+</style>
+
+<!-- 3. The Schema (The Shopify Admin Connection) -->
+{% schema %}
+{
+  "name": "Custom Announcement",
+  "settings": [
+    {
+      "type": "text",
+      "id": "headline_text",
+      "label": "Announcement Text",
+      "default": "Welcome to our Coffee Shop!"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Announcement"
+    }
+  ]
+}
+{% endschema %}
