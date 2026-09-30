@@ -52,10 +52,19 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "coffee_highlight_XjXhXn": {
+      "type": "coffee-highlight",
+      "name": "Custom Announcement",
+      "settings": {
+        "headline_text": "Welcome to our Coffee Shop!",
+        "bg_color": "#000000"
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "coffee_highlight_XjXhXn"
   ]
 }
