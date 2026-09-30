@@ -1,7 +1,24 @@
-{% comment %} This is your Liquid sandbox {% endcomment %}
+{% comment %} This is your Liquid sandbox
 
-{% assign practice_variable = "Hello from tutorial.liquid!" %}
+{% comment %} variable assign {%  %} this used for vaiable declare {% endcomment %}
+{% assign practice_variable = "Hello from tutorial.liquid!" %} 
 
 <div style="background-color: #ffd700; padding: 20px; text-align: center; font-weight: bold;">
+  {% comment %} variable prints, {{  }} this used for print {% endcomment %}
   {{ practice_variable }}
 </div>
+
+{%  capture html %}
+  <div> 
+    <p> hello {{ product.title }}</p>
+  </div>
+{% endcapture %}
+
+{{ html }} {% endcomment %}
+
+{% assign num = 11 %}
+{% if num > 10 %}
+  <p>num is graterthan 10</p>
+{% else %}
+  <p>num is lessthan or equal to 10</p>
+{% endif %}
