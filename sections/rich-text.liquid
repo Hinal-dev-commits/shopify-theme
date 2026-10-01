@@ -1,3 +1,9 @@
+{%assign heading_block = section.blocks | find: 'type', 'heading' %}
+<p>{{heading_block.settings.heading }}</p>
+
+{%assign heading_block = section.blocks | find_index: 'type', 'heading' %}
+
+
 {{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}

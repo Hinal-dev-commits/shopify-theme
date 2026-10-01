@@ -1,0 +1,42 @@
+<style>
+  @media screen and (max-width: 749px) {
+    .custom-banner {
+      display: none;
+    }
+  }
+</style>
+
+<div
+  class="custom-banner"
+  style="background-color: {{ section.settings.background_color }}; color: {{ section.settings.text_color }}; text-align: center; padding: 10px;"
+>
+  <p style="margin: 0; font-weight: bold;">
+    {{ section.settings.banner_text }}
+  </p>
+</div>
+
+{% schema %}
+{
+  "name": "Promo Banner",
+  "settings": [
+   
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Promo Banner"
+    }
+  ]
+}
+{% endschema %}
