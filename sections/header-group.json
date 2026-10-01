@@ -58,7 +58,7 @@
       "name": "Custom Announcement",
       "settings": {
         "headline_text": "Welcome to our Coffee Shop!",
-        "bg_color": "#000000"
+        "bg_color": "#ffffff"
       }
     }
   },
